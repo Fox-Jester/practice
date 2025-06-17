@@ -7,6 +7,54 @@
     <title>Document</title>
   </head>
   <body>
+    <div id="container">
+      <div class="control-bar">
+        <button id="add-btn">Add Book</button>
+
+        <dialog class="model">
+          <div class="model-header">
+            <h2>Create Book</h2>
+            <button id="close-btn">X</button>
+          </div>
+          <form id="model-form">
+            <div class="input-group">
+              <label for="name-input">Name:</label>
+              <input required type="text" id="name-input" />
+            </div>
+
+            <div class="input-group">
+              <label for="author-input">Author:</label>
+              <input required type="text" id="author-input" />
+            </div>
+
+            <div class="input-group">
+              <label for="genre-input">Genre:</label>
+              <input required type="text" id="genre-input" />
+            </div>
+
+            <div class="input-group">
+              <label for="number-input">Pages:</label>
+              <input required type="number" id="number-input" />
+            </div>
+
+            <div class="input-group">
+              <label for="color-select">Color:</label>
+
+              <select required id="color-select">
+                <option value="">Choose a color</option>
+                <option value="red">Red</option>
+                <option value="blue">Blue</option>
+                <option value="green">Green</option>
+                <option value="purple">Purple</option>
+              </select>
+            </div>
+
+            <button type="submit" id="create-btn">Create</button>
+          </form>
+        </dialog>
+      </div>
+      <div class="book-container"></div>
+    </div>
     <script src="script.js"></script>
   </body>
 </html>

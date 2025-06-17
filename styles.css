@@ -1,0 +1,115 @@
+
+
+#container{
+    display: flex;
+    flex-direction: column;
+}
+
+.book-container{
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+}
+
+.control-bar{}
+
+#add-btn{}
+
+.model{
+
+}
+
+.model-header{
+    display: flex;
+    padding: 3px;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.model-header h2{
+     margin: 0;
+    }
+
+#close-btn{
+    font-size: 1.1rem;
+    padding: 2px 6px;
+    position: absolute;
+    right: 0px;
+}
+
+#model-form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.input-group{
+    display: flex;
+    justify-content: center;
+ 
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 5px;
+    width: 150px;
+    height: 200px;
+    text-align: center;
+    border: 2px solid hsl(0, 0%, 20%);
+    position: relative;
+}
+
+.card.red {
+    background-color: maroon;
+}
+
+.card.blue{
+    background-color: royalblue;
+}
+
+.card.green {
+    background-color: forestgreen;
+}
+
+.card.purple{
+    background-color: purple;
+}
+
+.card-header{
+    margin-bottom: 3px;
+}
+
+.card-title{
+    padding: 3px;
+    background-color: hsl(0, 0%, 90%);
+    font-size: 1.1rem;
+}
+
+
+.card-body{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.card-body p{
+    color: white;
+    text-shadow: 1px 1px 2px hsl(0, 0%, 20%);
+    margin: 0;
+}
+
+.card-footer{
+    display: flex;
+    
+
+}
+
+.card-footer button{
+    cursor: pointer;
+    flex: 1;
+    padding: 6px 10px;
+}
+
