@@ -37,6 +37,19 @@ modelForm.addEventListener("submit", (e) => {
 })
 
 
+class Book{
+    constructor(props){
+        this.name = props.name;
+        this.author = props.author;
+        this.genre = props.genre;
+        this.color = props.color;
+        this.pages = props.pages;
+        this.id = crypto.randomUUID();
+        this.read = false;
+
+    }
+};
+
 const myLibrary = [
     new Book({
         name: "the Zapper!",
@@ -57,21 +70,11 @@ const myLibrary = [
 ]
 
 
-function Book(props){
-    this.name = props.name;
-    this.author = props.author;
-    this.genre = props.genre;
-    this.color = props.color;
-    this.pages = props.pages;
-    this.id = crypto.randomUUID();
-    this.read = false;
-};
-
 
 function addToLibrary(name, author, genre, color, pages){
     const newBook = new Book({name: name, author: author, genre: genre, color: color, pages: pages})
     myLibrary.push(newBook);
-    console.log(myLibrary);
+   
 };
 
 function refreshDisplay(){
