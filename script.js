@@ -36,7 +36,7 @@ const App = {
         try{
             const response = await fetch(this.$.URL);
             const dataObject = await response.json();
-            const img = dataObject.data.images["original"].url
+            const img = dataObject.data.images["fixed_height"].url
             this.updateImg(img)
         }
         catch(error){
