@@ -1,3 +1,8 @@
-p{
-    background-color: lch(91.12% 50.12 196.39);
+body{
+  background-color: black;
+}
+
+h2{
+  color: white;
+  text-shadow: 3px 3px 5px rgba(0,0,0, 0.2);
 }
